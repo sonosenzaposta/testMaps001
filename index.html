@@ -10,13 +10,13 @@
     <div id="map" style="width: 600px; height: 400px;"></div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-        var map = L.map('map').setView([25.65276, 9.16035], 13);
+        var map = L.map('map').setView([45.65276, 9.16035], 13);
         
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
         
-        L.marker([25.65276, 9.16035]).addTo(map)
+        L.marker([45.65276, 9.16035]).addTo(map)
             .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
             .openPopup();
     </script>
